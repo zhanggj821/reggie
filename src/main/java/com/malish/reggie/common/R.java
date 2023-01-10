@@ -2,11 +2,12 @@ package com.malish.reggie.common;
 
 import lombok.Data;
 
+import java.io.Serializable;
 import java.util.HashMap;
 import java.util.Map;
 
 @Data
-public class R<T> {
+public class R<T> implements Serializable {
     private Integer code; //1:susses 0 or other fail
 
     private String msg; // err message
